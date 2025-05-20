@@ -10,6 +10,7 @@ var (
 
 	// Common errors
 	OK = &Errno{Code: 0, Message: "OK"}
+	InternalServerError = &Errno{Code: 20000, Message: "Internal Server Error, Please Call Admin"}
 	// Client error
 	InvalidIP = &Errno{Code: 20003, Message: "Invalid IP address"}
 	// Special Error
