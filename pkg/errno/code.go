@@ -9,7 +9,9 @@ var (
 	// 00: error code
 
 	// Common errors
-	OK                  = &Errno{Code: 0, Message: "OK"}
+	OK = &Errno{Code: 0, Message: "OK"}
 	// Client error
-	InvalidIP     = &Errno{Code: 20003, Message: "Invalid IP address"}
+	InvalidIP = &Errno{Code: 20003, Message: "Invalid IP address"}
+	// Special Error
+	SampleError = &Errno{Code: 383838, Message: "Just Example"}
 )
